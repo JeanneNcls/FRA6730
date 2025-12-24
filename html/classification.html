@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="fr">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link rel="stylesheet" type="text/css" href="style.css" />
+   <link rel="stylesheet" type="text/css" href="index.css" />
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+   <title>Vingt mille lieues sous les mers</title>
+</head>
+
+<body>
+   <div class="banniere" alt="banniere">
+      <div class="sous-titre">
+         <p class="vml">Vingt mille lieues sous les mers</p>
+         <p>Jules Verne</p>
+      </div>
+   </div>
+   <nav class="menu-container">
+      <ul class="menu">
+         <li><a href="index.html">Cartographie</a></li>
+         <li class="persos"><a href="personnages.html">Personnages</a>
+         </li>
+         <li class="page_active">Thèmes
+            <ul class="sous">
+               <li class="deroulant"><a href="classification.html" class="page_active">Classification</a></li>
+               <li class="deroulant"><a href="sousmarin.html">Sous-marin</a></li>
+               <li class="deroulant"><a href="phosphorescence.html">Phosphorescence</a></li>
+               <li class="deroulant"><a href="plongee.html">Plongée</a></li>
+            </ul>
+         </li>
+         <li><a href="galerie.html">Galerie</a></li>
+         <li><a href="apropos.html">À propos</a></li>
+      </ul>
+   </nav>
+   <div class="texte">
+      <h1>La classification</h1>
+      <cite>« Dans l'embranchement des zoophytes et dans la classe des alcyonnaires, on
+         remarque l'ordre des gorgonaires qui renferme les trois groupes des
+         gorgoniens, des isidiens et des coralliens. C'est à ce dernier
+         qu'appartient le corail, curieuse substance qui fut tour à tour classée
+         dans les règnes minéral, végétal et animal. »</cite>
+      <p>Tout au long du roman, le professeur Aronnax et Conseil étudient les êtres vivants qu'ils sont amenés à croiser
+         lors de leur périple. Animaux, plantes, tous passent sous leur expertise. Mais qu'est-ce que cette
+         classification
+         qui les anime tant ?</p>
+      <h2>La systématique, science de la classification </h2>
+      <p>La systématique est la science qui met en place un système d’organisation des espèces. Aujourd’hui, elle
+         cherche à illustrer au mieux les relations de parenté entre toutes les espèces connues. </p>
+      <p>Le fait-même de ranger les espèces d’une certaine façon (en pile, en arbre, en tiroirs…) définit la
+         systématique. Cette discipline rend compte de l’organisation générale, comme un programme qui guiderait la
+         classification. Elle dit comment envisager l’agencement des espèces les unes par rapport aux autres.</p>
+
+      <p>Ainsi, la systématique d’aujourd’hui rend compte d’une organisation du vivant en groupes emboités les uns dans
+         les autres et les uns par rapport aux autres. Pour se représenter cette organisation, on pourrait imaginer une
+         grande armoire dans laquelle sont rangées les espèces. Pour trouver le hérisson commun, il faut d’abord ouvrir
+         le grand tiroir des vertébrés, puis à l’intérieur de celui-ci chercher le tiroir des Mammifères. Dans ce
+         dernier, on cherchera ensuite les Érinacéidés, avant de trouver le hérisson. On part ainsi du plus grand groupe
+         pour aller vers le plus spécifique.</p>
+      <p>Source : <a href="https://www.mnhn.fr/fr/taxonomie-systematique-a-quoi-sert-de-classer-le-vivant">Musée
+            d'histoire naturelle</a></p>
+      <br>
+      <br>
+      <cite>« J'avais en lui un spécialiste, très-ferré sur la
+         classification en histoire naturelle, parcourant avec une agilité
+         d'acrobate toute l'échelle des embranchements, des groupes, des classes,
+         des sous-classes, des ordres, des familles, des genres, des sous-genres,
+         des espèces et des variétés. »</cite>
+      <p>Que sont ces embranchements, familles, classes auxquelles nos deux experts rattachent-ils les êtres vivants ?
+      </p>
+      <h2>La classification traditionnelle</h2>
+      <p>La classification traditionnelle repose sur une hiérarchie fixe de catégories (les rangs de taxon), définie de
+         la façon suivante : (vivant) → règne → embranchement → classe → ordre → famille → genre → espèce</p>
+      <p>Source : <a href="https://fr.wikipedia.org/wiki/Classification_scientifique_des_esp%C3%A8ces">Wikipedia</a></p>
+      <h2>La classification de Linné</h2>
+      <p>En 1735, Carl von Linné (1707-1778) publie le premier essai de classification systématique des trois règnes
+         minéral, végétal et animal. Son Système de la naturedivise les animaux en six groupes (quadrupèdes, oiseaux,
+         amphibiens, poissons, insectes, vers), déterminés en fonction d’organes spécifiques : dents, bec, nageoires ou
+         ailes. La dixième édition, de 1758, généralise le système de nomenclature binomial avec un double nom latin,
+         générique et spécifique, pour chaque espèce. L’ambition de Linné est d’imposer un principe descriptif rationnel
+         et universel, valable aussi bien pour les végétaux que pour les animaux et les minéraux. Il prend pour critères
+         de détermination les caractères sexuels. La chasse aux spécimens se développe. Linné envoie des collaborateurs
+         dans des régions encore inexplorées par les naturalistes, pour parvenir à compléter cet inventaire.</p>
+      <p>Source : <a href="https://gallica.bnf.fr/essentiels/repere/classification-linne-1758">Gallica</a></p>
+      <br>
+      <br>
+      <cite>« Tout le monde sait que les poissons forment la quatrième et dernière
+         classe de l'embranchement des vertébrés. On les a très-justement
+         définis: «des vertébrés à circulation double et à sang froid, respirant
+         par des branchies et destinés à vivre dans l'eau.» Ils composent deux
+         séries distinctes: la série des poissons osseux, c'est-à-dire ceux dont
+         l'épine dorsale est faite de vertèbres osseuses, et les poissons
+         cartilagineux, c'est-à-dire ceux dont l'épine dorsale est faite de
+         vertèbres cartilagineuses. »</cite>
+      <p>Les méthodes de classification se sont diversifiées au fil des découvertes et des réflexions scientifiques. La
+         classification phylogénétique diffère aujourd'hui de la classification traditionnelle utilisée par Aronnax et
+         Conseil, notamment par l'utilisation de clades et du principe de l'ancêtre commun. Comment cela peut-il
+         affecter un exemple tel que celui des poissons cités ci-dessus ?</p>
+      <p>La plupart des ichtyologistes utilisent la méthode de classification dite cladistique, une méthode qui classe
+         les organismes strictement selon l'ancêtre commun le plus récent. Le but de ce système est de regrouper sous
+         chaque unité taxinomique toutes les espèces qui partagent un ancêtre commun. Cela donne souvent une
+         classification très différente de celle résultant de la méthode communément utilisée jusque dans les années
+         1975-1980. Cette ancienne méthode, évolutive ou synthétique, tenait compte du degré présumé de divergence entre
+         les groupes ainsi que de l'histoire de leurs liens évolutifs, et un taxon peut ne pas comprendre tous les
+         descendants de la présumée espèce ancestrale.
+
+         Un exemple qui montre la différence entre ces deux approches est la classification des myxines et des
+         lamproies. Dans un système cladistique, les MYXINES seraient placées dans une catégorie différente de celle des
+         LAMPROIES et des autres vertébrés, étant donné que la plupart des ichtyologistes qui s'appuient sur les
+         caractéristiques morphologiques croient que les lamproies, contrairement aux myxines, dérivent d'un
+         embranchement généalogique commun à tous les autres vertébrés. Les systématiciens qui utilisent la méthode
+         évolutive peuvent exprimer les liens de plusieurs façons, mais ont tendance à placer les myxines et les
+         lamproies dans la catégorie des poissons sans mâchoires, séparées de tous les vertébrés à mâchoires, tout en
+         reconnaissant qu'elles sont d'une parenté très éloignée.</p>
+      <p>Source : <a href="https://thecanadianencyclopedia.ca/fr/article/poissons-classification-des">L'encyclopédie
+            canadienne</a></p>
+   </div>
+   <div class="footer">
+      <div class="texte_integral">
+         <p>Retrouvez le texte intégral original <a
+               href="https://www.gutenberg.org/cache/epub/54873/pg54873-images.html">ici</a>.</p>
+      </div>
+   </div>
+</body>
+
+</html>

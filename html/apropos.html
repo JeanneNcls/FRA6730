@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="fr">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link rel="stylesheet" type="text/css" href="style.css" />
+   <link rel="stylesheet" type="text/css" href="index.css" />
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+   <title>Vingt mille lieues sous les mers</title>
+</head>
+
+<body>
+   <div class="banniere" alt="banniere">
+      <div class="sous-titre">
+         <p class="vml">Vingt mille lieues sous les mers</p>
+         <p>Jules Verne</p>
+      </div>
+   </div>
+   <nav class="menu-container">
+      <ul class="menu">
+         <li><a href="index.html">Cartographie</a></li>
+         <li class="persos"><a href="personnages.html">Personnages</a>
+         </li>
+         <li>Thèmes
+            <ul class="sous">
+               <li class="deroulant"><a href="classification.html">Classification</a></li>
+               <li class="deroulant"><a href="sousmarin.html">Sous-marin</a></li>
+               <li class="deroulant"><a href="phosphorescence.html">Phosphorescence</a></li>
+               <li class="deroulant"><a href="plongee.html">Plongée</a></li>
+            </ul>
+         </li>
+         <li><a href="galerie.html">Galerie</a></li>
+         <li><a href="apropos.html" class="page_active">À propos</a></li>
+      </ul>
+   </nav>
+   <div class="texte">
+      <h2>À propos</h2>
+      <p>Ce site est une proposition d'édition critique numérique du roman d'aventures <em>Vingt mille lieues sous les
+            mers</em> de Jules Verne. Publiée intégralement par l'éditeur Pierre-Jules Hetzel en 1869 pour le premier
+         volume et
+         1870 pour le second, cette œuvre parut d'abord en feuilleton dans le <em>Magasin d'éducation et de
+            récréation</em>,
+         revue destinée aux enfants et aux adolescents. Cette édition a pour but de servir d'outil à la découverte du
+         roman de Jules Verne dans un contexte éducatif.</p>
+      <p>Le texte numérique sur lequel elle s'appuie a été publié par le Projet Gutenberg : le contenu textuel a été
+         repris ainsi que les marques des italiques, le reste du balisage a été réalisé par l'éditrice. Édité en TEI, le
+         texte a ensuite pu être transformé par une feuille XSL pour produire la page HTML d'accueil. Cette page a
+         ensuite été modifiée manuellement pour réajuster des paramètres d'édition. Pour terminer, l'ensemble des pages
+         HTML a été codé pour produire une site lisible réunissant les ajouts de cette édition numérique.</p>
+      <br>
+      <p>S'ouvrant sur une carte décrivant le trajet parcouru par le personnage principal du début à la fin du roman,
+         cette édition ancre tout d'abord le texte original dans une visualisation géographique. Elle met en relation le
+         voyage avec des repères concrets et numérotés servant de support de compréhension pour les jeunes lecteurs. Ce
+         choix éditorial a pour but d'apporter un aspect ludique encourageant la découverte de ce roman. Il permet aussi
+         de rendre compte de l'évolution de la nomenclature de certains lieux et de mettre l'accent sur leur perception
+         par le personnage principal.</p>
+      <p>Chaque repère correspond à une section de texte, ce qui est possible grâce aux détails fournis par Verne. En
+         effet, le voyage d'Aronnax est décrit temporellement et géographiquement avec mentions de dates et de
+         coordonnées ou lieux dans le texte. C'est ce qui permet d'avoir des sections distinctes les unes des autres et
+         qui ne se superposent pas. Chaque section est numérotée pour tracer les étapes et commence à un changement de
+         lieu, parfois désigné par un nom de ville, de canal ou encore d'île. Pour cette édition, un changement de lieu
+         a été défini par la mention claire d'un point de repère ou de coordonnées (« La frégate se trouvait alors par
+         31° 15′ de latitude nord et par 136° 42′ de longitude est », « il passa en vue des Sandwich », « naviguait au
+         milieu de l'archipel des Nouvelles-Hébrides »). Par cohérence, les titres de chapitre placés au niveau d'un
+         changement de section ont été inclus dans celle qui débutait : il a été considéré que ce type de texte faisait
+         référence à la nouvelle section plutôt qu'à l'ancienne. Certains changements de lieux ont pu être opérés au
+         sein d'un même paragraphe, il a donc été décidé de découper le paragraphe original pour respecter la logique
+         des sections appliquée pour cette édition. Cela suppose un changement de structure du texte, qui a ainsi été
+         rendu disponible dans sa version intégrale en bas de page (renvoyant à l'édition numérique du Projet Gutenberg,
+         qui respecte la structure du texte original). Ainsi découpé, le texte est accessible en cliquant sur les
+         repères, via un lecteur offrant également la
+         possibilité de naviguer d'une section à l'autre sans repasser par la carte.</p>
+      <p>Les images accompagnent le texte
+         comme dans leur édition initiale. Réunies au sein d'une galerie, elles peuvent être parcourues plus aisément
+         afin de rendre compte de l'imagerie du roman.
+         L'édition propose de découvrir les personnages au travers du personnage principal, permettant de rester fidèle
+         à l'œuvre originale. Les thèmes proposent de mettre en lien des passages de texte avec des informations
+         relatives à la biologie ou à la technologie par exemple. Des questions permettent d'ouvrir le sujet, de
+         proposer des sites ressources et d'actualiser certaines informations.</p>
+      <br>
+      <h2>Critiques de cette modélisation</h2>
+      <p>Les endroits parcourus sont souvent décrits dans le texte à travers d'expressions telles que "être en vue de".
+         Ainsi, on obtient une idée de l'emplacement du bateau sans avoir systématiquement des coordonnées précises. De
+         ce fait, le placement de certains repères relève d'interprétations.</p>
+      <p>Le parti pris de cette édition a été de définir le début d'une section par un changement de lieu. Cependant, le
+         Nautilus continue d'avancer au fil de la section et ce sur plusieurs jours parfois. Une amélioration de cette
+         modélisation (avec de meilleurs moyens techniques que ceux de l'éditrice) serait de modéliser une avancée
+         pondérée du sous-marin. À l'aide des dates, mais aussi des vitesses données par le personnage principal, il
+         pourrait être envisageable de calculer l'avancée du sous-marin depuis chaque repère géographique. Il s'agirait
+         alors de trouver un mode d'affichage permettant de montrer ce parcours évoluant en même temps que la lecture.
+      </p>
+   </div>
+   <div class="footer">
+      <div class="texte_integral">
+         <p>Retrouvez le texte intégral original <a
+               href="https://www.gutenberg.org/cache/epub/54873/pg54873-images.html">ici</a>.</p>
+      </div>
+   </div>
+</body>
+
+</html>
