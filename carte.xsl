@@ -23,11 +23,7 @@
                     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
                 <title>Vingt mille lieues sous les mers</title>
-              
-
             </head>
-
-
 
             <body>
                 <button onclick="topFunction()" id="bouton" title="revenir_en_haut">⬆</button>
@@ -45,7 +41,6 @@
                         
                         <li>Personnages
                             <ul class="sous">
-                                <li class="deroulant"><a href="aronnax.html">Pierre Aronnax</a></li>
                                 <li class="deroulant"><a href="conseil.html">Conseil</a></li>
                                     <li class="deroulant"><a href="nedland.html">Ned Land</a></li>
                                         <li class="deroulant"><a href="capitainenemo.html">Le Capitaine Nemo</a>
@@ -54,10 +49,10 @@
                         </li>
                         <li><a href="themes.html">Thèmes</a>
                             <ul class="sous">
-                                <li class="deroulant"><a href="phosphorescence.html">Phosphorescence</a></li>
-                                <li class="deroulant"><a href="navigation.html">Navigation</a></li>
-                                    <li class="deroulant"><a href="sousmarin.html">Sous-marin</a></li>
-                                        <li class="deroulant"><a href="classification.html">Classification</a>
+                                <li class="deroulant"><a href="classification.html">Classification</a></li>
+                                <li class="deroulant"><a href="sousmarin.html">Sous-marin</a></li>
+                                    <li class="deroulant"><a href="phosphorescence.html">Phosphorescence</a></li>
+                                        <li class="deroulant"><a href="plongee.html">Plongée</a>
                                         </li>
                             </ul>
                         </li>
@@ -76,9 +71,6 @@
                     </xsl:for-each>
                 </div>
                     <script>
-                        /* =========================
-                        1. Création de la carte
-                        ========================= */
                         var map = L.map('map', {
                         worldCopyJump: true
                         }).setView([20, 0], 3);
@@ -86,10 +78,7 @@
                         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                         attribution: 'OpenStreetMap'
                         }).addTo(map);
-                        
-                        /* =========================
-                        2. Lecteur plein écran
-                        ========================= */
+                      
                         var reader = document.createElement('div');
                         reader.id = 'reader';
                         reader.style.display = 'none';
@@ -112,9 +101,6 @@
                         reader.style.display = 'none';
                         };
                         
-                        /* =========================
-                        3. Collecte des points
-                        ========================= */
                         var pathCoords = [];
                         var sections = [];
                         
@@ -132,9 +118,6 @@
                             </xsl:if>
                         </xsl:for-each>
                         
-                        /* =========================
-                        4. Normalisation antiméridien
-                        ========================= */
                         function unwrapPath(coords) {
                         var result = [];
                         var prevLng = null;
@@ -157,9 +140,6 @@
                         
                         pathCoords = unwrapPath(pathCoords);
                         
-                        /* =========================
-                        5. Polyline fluide
-                        ========================= */
                         var polyline = L.polyline(pathCoords, {
                         color: 'blue',
                         noClip: true
@@ -195,21 +175,5 @@
         </em>
     </xsl:template>
 
-    <xsl:template match="tei:persName">
-        <span class="person">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-
-    <xsl:template match="tei:date">
-        <time>
-            <xsl:apply-templates/>
-        </time>
-    </xsl:template>
-
-    <xsl:template match="tei:desc">
-        <span class="desc">
-            <xsl:apply-templates/>
-        </span>
     </xsl:template>
 </xsl:stylesheet>
