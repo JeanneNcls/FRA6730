@@ -15056,9 +15056,7 @@
          </div>
       </div>
       <script>
-         /* =========================
-         1. Création de la carte
-         ========================= */
+
          var map = L.map('map', {
             worldCopyJump: true
          }).setView([20, 0], 3);
@@ -15067,9 +15065,7 @@
             attribution: 'OpenStreetMap'
          }).addTo(map);
 
-         /* =========================
-         2. Lecteur plein écran
-         ========================= */
+    
          var reader = document.createElement('div');
          reader.id = 'reader';
          reader.style.display = 'none';
@@ -15115,9 +15111,7 @@
                   document.getElementById(sections[currentSectionIndex]).innerHTML;
             }
          };
-         /* =========================
-         3. Collecte des points
-         ========================= */
+    
          var pathCoords = [];
          var sections = [];
 
@@ -15619,10 +15613,6 @@
 
          sections.push("sec-71");
 
-
-         /* =========================
-         4. Normalisation antiméridien
-         ========================= */
          function unwrapPath(coords) {
             var result = [];
             var prevLng = null;
@@ -15645,9 +15635,6 @@
 
          pathCoords = unwrapPath(pathCoords);
 
-         /* =========================
-         5. Polyline fluide
-         ========================= */
          var polyline = L.polyline(pathCoords, {
             color: 'blue',
             noClip: true
@@ -15666,11 +15653,11 @@
 
          pathCoords.forEach(function (coords, i) {
             var marker = L.marker(coords, {
-               icon: numberedIcon(i + 1, 'red') // numérotation + couleur
+               icon: numberedIcon(i + 1, 'red') 
             }).addTo(map);
 
             marker.on('click', function () {
-               currentSectionIndex = i; // sauvegarde la section
+               currentSectionIndex = i; 
                document.getElementById('readerContent').innerHTML =
                   document.getElementById(sections[i]).innerHTML;
                reader.style.display = 'block';
